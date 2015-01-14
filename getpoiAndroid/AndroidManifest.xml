@@ -29,9 +29,15 @@
             </intent-filter>
         </activity>
 
-      
-        <service android:name="com.getpoi.beacon.PoiService" />
+        <receiver
+            android:name="com.getpoi.beacon.PoiBroadcastReceiver"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.getpoi.beacon.RECEIVE" />
+            </intent-filter>
+        </receiver>
 
+        <service android:name="com.getpoi.beacon.PoiService" />
     </application>
 
 </manifest>

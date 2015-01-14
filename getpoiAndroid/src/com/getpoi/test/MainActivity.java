@@ -3,11 +3,9 @@ package com.getpoi.test;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 import com.getpoi.beacon.PoiService;
-import com.getpoi.beacon.objects.BeaconResponse;
 
 public class MainActivity extends Activity {
 
@@ -66,20 +64,7 @@ public class MainActivity extends Activity {
 			}
 		});
 
-		PoiService.pushListener = new PoiService.PushListener() {
-
-			@Override
-			public void onPush(BeaconResponse data) {
-				if (!data.getBody().isEmpty()) {
-					String title = data.getTitle();
-					String body = data.getBody();
-					Log.e("Data ", title + body);
-
-				}
-			}
-
-		};
-
+		
 	}
 
 }
