@@ -1,5 +1,5 @@
-# getPoiAndroid
-Example Android Application that shows usage of the Android SDK
+# Poi Android SDK
+Poi Android SDK and Example Android Application that shows usage of the SDK
 
 Installation
 -------
